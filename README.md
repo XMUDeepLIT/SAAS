@@ -1,5 +1,13 @@
-# SAAS
+## SAAS: Self-Aware Reinforcement Learning for Over-Search Mitigation in Agentic Search
 
+<div align="center"> 
+
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b5212f.svg?logo=arxiv)](https://arxiv.org/abs/2605.29796)
+[![License](https://img.shields.io/badge/LICENSE-MIT-green.svg)](https://opensource.org/licenses/MIT) 
+
+</div> 
+
+## 💡 Overview
 SAAS is an implementation of **Self-Aware Reinforcement Learning for Over-Search Mitigation in Agentic Search**. SAAS trains a search-augmented LLM to recognize its own knowledge boundary, so it searches only when its parametric knowledge is insufficient and stops once enough evidence has been collected.
 
 1. For each training question, draw two grouped rollouts under the current policy: a search-disabled group and a search-enabled group.
@@ -7,7 +15,24 @@ SAAS is an implementation of **Self-Aware Reinforcement Learning for Over-Search
 3. Apply a boundary-aware reward: penalize every search on `NO_SEARCH` questions, penalize only searches beyond the minimum sufficient count on `NEED_SEARCH` questions, and skip the search penalty on `UNDETERMINED` questions.
 4. Optimize with a two-stage curriculum — Stage I (capability acquisition) trains with the outcome-only reward, Stage II (efficiency refinement) activates the boundary-aware reward.
 
-## Core structure
+<p align="center">
+    <img width="100%" alt="image" src="https://github.com/user-attachments/assets/fe16ff4f-db87-4248-858d-ad8358b2b450" />
+</p>
+
+---
+
+## 📊 Overall Performance
+As shown below, SAAS demonstrates strong overall performance across 7 challenging QA benchmarks, achieving superior accuracy while significantly reducing redundant searches to ensure a favorable trade-off between reasoning quality and search efficiency.
+
+
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/3f66e096-1da9-4065-9106-ee50f0224f38" />
+
+
+
+
+
+
+## 🥑 Core structure
 
 ```text
 SAAS/
