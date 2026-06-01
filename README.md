@@ -247,3 +247,15 @@ The per-rollout dump in `reward_info/` is enough to recompute the reported metri
 ## Notes
 
 All environment-specific absolute paths, model names, and API keys have been replaced with command-line arguments or placeholders. The code does not assume a specific user name, machine name, or GPU model.
+
+## 📃 Citation
+
+```
+@article{tang2026saas,
+  title={SAAS: Self-Aware Reinforcement Learning for Over-Search Mitigation in Agentic Search},
+  author={Tang, Yunbo and Yang, Chengyi and Liu, Shiyu and Xiang, Zhishang and Chen, Zerui and Zhang, Qinggang and Su, Jinsong},
+  journal={arXiv preprint arXiv:2605.29796},
+  year={2026}
+}
+```
+
