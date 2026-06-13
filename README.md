@@ -16,7 +16,7 @@ SAAS is an implementation of **Self-Aware Reinforcement Learning for Over-Search
 4. Optimize with a two-stage curriculum — Stage I (capability acquisition) trains with the outcome-only reward, Stage II (efficiency refinement) activates the boundary-aware reward.
 
 <p align="center">
-    <img width="100%" alt="image" src="https://github.com/user-attachments/assets/fe16ff4f-db87-4248-858d-ad8358b2b450" />
+    <img width="100%" alt="image" src="https://github.com/user-attachments/assets/aeed493f-6f80-4895-8fda-283cdeed3d6a" />
 </p>
 
 ---
@@ -258,4 +258,3 @@ All environment-specific absolute paths, model names, and API keys have been rep
   year={2026}
 }
 ```
-
